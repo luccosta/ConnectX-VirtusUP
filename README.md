@@ -1,5 +1,5 @@
 # ConnectX-VirtusUP
-The project for the first module of Virtus Up AI training to develop agents for the Connect X game
+The project for the first module of Virtus Up AI training to develop agents for the Connect X game.
 
 ## The Challenge
 
@@ -19,7 +19,7 @@ The strategy adopted is based on the influence of an piece in the table environm
 
 ![](strategy.png)
 
-#### Four Filter
+#### Four Space Filter
 
 To avaliate a seven row, a filter of four spaces is passed through the array and are 5 possible results:
 
@@ -29,8 +29,20 @@ To avaliate a seven row, a filter of four spaces is passed through the array and
 - In the four spaces are there three pieces: Indicates that the piece placement help the agent to win the game
 - In the four spaces are there four pieces: The piece placement win the game
 
+The image beyond shows the result of the filter applications in an seven row.
+
+![](four-filter.png)
+
+The result of the sum of points attributed to each four space filter is the value of the seven row.
+
 But how to define these rewards? Is visible an hierarchy between them, but the specific values which determine the best agent is only empirically found. To find these optimal rewards where used an genetic algorithm. 
 
 ### Genetic Algorithm
 
 The genetic algorithm was initially designed to have the weights like gene pool, and the fitness function to evaluate an chromosome is the quantity of wins achieved against pre defined oponents in 10 plays with each.
+
+The genes are in a 1 to 50 range.
+
+The next image shows the model adopted to the chromosome.
+
+![](chromosome.png)
