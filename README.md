@@ -35,7 +35,11 @@ The image beyond shows the result of the filter applications in an seven row.
 
 The result of the sum of points attributed to each four space filter is the value of the seven row.
 
-But how to define these rewards? Is visible an hierarchy between them, but the specific values which determine the best agent is only empirically found. To find these optimal rewards where used an genetic algorithm. 
+But how to define these rewards? Is visible an hierarchy between them, but the specific values which determine the best agent is only empirically found. To find these optimal rewards where used an genetic algorithm.
+
+#### Fit List
+
+The fit list are a list of the sum of the values of each seven row for each possible position to put a piece (the 7 columns).
 
 ### Genetic Algorithm
 
